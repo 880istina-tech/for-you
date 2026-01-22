@@ -12,46 +12,46 @@
       font-weight: 700;
       background: #ffffff;
       color: #111;
-      line-height: 1.8;
-      font-size: 20px;
+      line-height: 1.9;
+      font-size: 22px;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 24px;
     }
-    .hero {
+    .section {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 20px;
       margin-bottom: 60px;
-      text-align: center;
     }
-    .hero img {
-      width: 100%;
+    .section img {
+      width: 35%;
       border-radius: 20px;
     }
-    .hero .text {
-      font-size: 28px;
-      color: #333;
-    }
-    .section {
-      margin-bottom: 60px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 20px;
-      margin-bottom: 16px;
-    }
-    .soft {
+    .text {
+      width: 60%;
       color: #444;
-      font-size: 22px;
+      font-size: 24px;
     }
     .final {
-      font-size: 24px;
+      font-size: 26px;
       color: #000;
       text-align: center;
       margin-top: 40px;
+    }
+    @media(max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+      .section img, .text {
+        width: 100%;
+      }
+      .text {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
@@ -59,35 +59,39 @@
   <div class="container">
 
     <!-- главный экран -->
-    <div class="hero">
+    <div class="section">
       <img src="photo1.jpg">
       <div class="text">
         Иногда один человек делает обычные дни чуть светлее.  
-        И хочется просто быть рядом.
+        И хочется просто быть рядом.  
+        Каждое мгновение с тобой становится ценнее, и я ловлю себя на том, что думаю о тебе чаще, чем хотелось бы.
       </div>
     </div>
 
-    <!-- блок фото + текст -->
-    <div class="section gallery">
+    <!-- фото + текст -->
+    <div class="section">
       <img src="photo2.jpg">
-      <div class="soft">
-        Мне нравится как ты улыбаешься, даже когда делаешь вид что все как обычно.  
-        Твои чудесные карие глаза и твоя красота заставляют меня улыбаться.  
-        С тобой легко и приятно, каждый момент рядом с тобой особенный.
+      <div class="text">
+        Мне нравится как ты улыбаешься, даже когда делаешь вид, что всё как обычно.  
+        Твои чудесные карие глаза, твоя красота и мягкая энергия заставляют меня улыбаться и чувствовать тепло.  
+        С тобой легко и приятно, каждый момент рядом с тобой особенный.  
+        Наши разговоры по телефону хоть и не длинные, но они согревают больше, чем слова могут передать.  
+        Ты умеешь делать обычный день светлым и спокойным.
       </div>
     </div>
 
-    <div class="section gallery">
+    <div class="section">
       <img src="photo3.jpg">
-      <div class="soft">
-        Наши разговоры по телефону хоть и не длинные, но очень греют.  
-        Ты умеешь делать обычный день светлым и спокойным.  
-        С тобой просто быть собой, и это ценнее всего.
+      <div class="text">
+        Рядом с тобой хочется быть собой, не притворяться и не стараться.  
+        Мне нравится твоя лёгкость, твоя энергия и то, как просто нам общаться.  
+        Каждый день, проведённый с тобой, делает меня счастливее.  
+        Я ловлю себя на том, что думаю о тебе, улыбаюсь при воспоминании наших разговоров и хочу, чтобы эти моменты длились дольше.
       </div>
     </div>
 
     <!-- финальный блок -->
-    <div class="section final">
+    <div class="final">
       Я не знаю куда это приведет,  
       но мне нравится идти в эту сторону.  
       Быть рядом с тобой приятно и спокойно.  
