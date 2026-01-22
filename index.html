@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>для тебя</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #ffffff;
       color: #111;
+      line-height: 1.6;
     }
     .container {
       max-width: 900px;
@@ -22,13 +23,15 @@
       flex-direction: column;
       gap: 20px;
       margin-bottom: 60px;
+      text-align: center;
     }
     .hero img {
       width: 100%;
       border-radius: 20px;
     }
-    .text {
-      font-size: 20px;
+    .hero .text {
+      font-size: 24px;
+      font-family: 'Playfair Display', serif;
       color: #333;
     }
     .section {
@@ -40,33 +43,48 @@
       margin-bottom: 16px;
     }
     .soft {
-      color: #666;
+      color: #444;
+      font-size: 18px;
+    }
+    .special h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: #000;
     }
     .special p {
       margin: 10px 0;
+      font-size: 18px;
+      color: #555;
     }
     .final {
-      font-size: 22px;
+      font-size: 20px;
       color: #000;
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <div class="container">
 
+    <!-- главный экран -->
     <div class="hero">
       <img src="photo1.jpg">
       <div class="text">
         иногда один человек<br>
-        делает обычные дни чуть светлее
+        делает обычные дни чуть светлее<br>
+        и хочется просто быть рядом
       </div>
     </div>
 
+    <!-- блок фото + текст -->
     <div class="section gallery">
       <img src="photo2.jpg">
       <div class="soft">
         мне нравится как ты улыбаешься<br>
-        даже когда делаешь вид что все как обычно
+        даже когда делаешь вид что все как обычно<br>
+        твоя улыбка меня цепляет больше чем слова
       </div>
     </div>
 
@@ -74,10 +92,12 @@
       <img src="photo3.jpg">
       <div class="soft">
         с тобой спокойно<br>
-        и это редкая штука
+        и это редкая штука<br>
+        рядом с тобой не хочется ничего менять
       </div>
     </div>
 
+    <!-- почему она особенная -->
     <div class="section special">
       <h3>почему ты особенная</h3>
       <p>ты настоящая</p>
@@ -85,11 +105,14 @@
       <p>ты умеешь быть теплой</p>
       <p>даже когда мир не очень</p>
       <p>ты остаешься собой</p>
+      <p>твоя простота делает тебя уникальной</p>
     </div>
 
+    <!-- финальный блок -->
     <div class="section final">
       я не знаю куда это приведет<br>
       но мне нравится идти в эту сторону<br>
+      быть рядом с тобой приятно и спокойно<br>
       возможно это только начало
     </div>
 
